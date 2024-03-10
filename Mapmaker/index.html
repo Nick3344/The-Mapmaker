@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapmaker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--<h1>Potato Map</h1>-->
+    <div class="matrix" id="matrix"></div>
+    <div id="rounds-card" class="rounds-card">
+        Rounds: 0 / 28
+    </div>
+    <div class="preview-card" id="preview-card">
+        <h2>Pattern Preview</h2>
+        <p class="time-unit" id="time-unit">Time-unit : 0</p>
+        <div class="preview-grid" id="preview-grid"></div>
+        <button id="rotateButton">Rotate</button>
+        <button id="mirrorButton">Mirror</button>
+    </div>
+    <div class="points-card" id="points-card">Total Points: 0</div>
+    <audio id="myAudio">
+        <source src="audio/8bit_notification.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    
+    
+    <button id="reloadButton">Restart</button>
+    <script src="index.js"></script>
+</body>
+</html>

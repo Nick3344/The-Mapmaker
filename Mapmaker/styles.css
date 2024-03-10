@@ -1,0 +1,105 @@
+body {
+    background-color: #DADDB1;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    align-items: flex-start; /* Align content to the top */
+}
+
+h1 {
+    font-family: 'Arial', sans-serif; /* Choose a suitable font */
+    font-size: 36px; /* Adjust the font size */
+    color: #333; /* Choose a color for the text */
+    text-align: center; /* Center the text */
+    margin-bottom: 20px; /* Add some space below the heading */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle text shadow */
+}
+
+.matrix {
+    display: grid;
+    grid-template-columns: repeat(11, 50px); /* Adjusted width */
+    grid-template-rows: repeat(11, 50px); /* Adjusted height */
+    margin-top: 110px; /* Added space from top */
+    margin-left: 10px; 
+    margin-bottom: 50;/* Added space from left */
+    border-radius: 10%;
+    border-spacing: 5px; /* Add space between rows and columns */
+    border-color: aqua;
+}
+
+.matrix .cell {
+    background-image: url('assets/tiles/base_tile.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 8px; 
+    border: 1px solid #ddd; 
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease;
+    border-color: gray;
+}
+
+.matrix .cell:hover {
+    box-shadow: 0px 0px 30px #7289da;
+}
+
+
+
+.rounds-card, .points-card {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 20px; /* Adjusted margin for both cards */
+}
+
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(107, 107, 107, 0.1);
+    font-size: 18px;
+    text-align: center;
+    margin: 50px 20px;
+}
+
+/*.preview-card {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 50px 20px;
+}*/
+
+.preview-card {
+    background-color: #a29595;
+    padding: 10px;
+    border-radius: 10px;
+    size: 0cap;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+.preview-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 30px);
+    grid-template-rows: repeat(3, 30px);
+    margin: 20px auto;
+}
+
+.preview-cell {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
