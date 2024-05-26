@@ -1,4 +1,4 @@
-const elements = [ 
+const elements = [  
     {
         time: 2,
         type: 'water',
